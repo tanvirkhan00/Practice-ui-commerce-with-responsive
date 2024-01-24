@@ -579,6 +579,11 @@ video {
   margin-bottom: 1.25rem;
 }
 
+.my-4 {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
 .mb-0 {
   margin-bottom: 0px;
 }
@@ -731,8 +736,16 @@ video {
   flex-basis: 45%;
 }
 
+.basis-\[95\%\] {
+  flex-basis: 95%;
+}
+
 .flex-col {
   flex-direction: column;
+}
+
+.flex-wrap {
+  flex-wrap: wrap;
 }
 
 .items-center {
@@ -1070,6 +1083,10 @@ video {
     flex-basis: 45%;
   }
 
+  .md\:basis-\[48\%\] {
+    flex-basis: 48%;
+  }
+
   .md\:flex-col {
     flex-direction: column;
   }
@@ -1181,6 +1198,14 @@ video {
     flex-basis: 23%;
   }
 
+  .xl\:basis-\[24px\] {
+    flex-basis: 24px;
+  }
+
+  .xl\:basis-\[24\%\] {
+    flex-basis: 24%;
+  }
+
   .xl\:flex-col {
     flex-direction: column;
   }
@@ -1195,6 +1220,10 @@ video {
 
   .xl\:justify-center {
     justify-content: center;
+  }
+
+  .xl\:justify-between {
+    justify-content: space-between;
   }
 
   .xl\:justify-evenly {
