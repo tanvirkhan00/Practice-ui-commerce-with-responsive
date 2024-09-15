@@ -1,3 +1,13 @@
+/* Google Fonts Link */
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Lobster&family=Protest+Guerrilla&family=SUSE:wght@100..800&display=swap');
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+
+@layer base{
+    section{
+        @apply pt-10 pb-4;
+    }
+}

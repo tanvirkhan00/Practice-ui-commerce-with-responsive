@@ -6,103 +6,108 @@
   <link href="./output.css" rel="stylesheet">
 </head>
 <body>
-    <section class="top_manue">
-        <div class="t1-wraper md:flex md:mt-5 md:justify-between">
-            <div class="t-left flex justify-between mx-[50px] my-8 md:my-0 md:items-center">
-                <div class="bar text-3xl  md:hidden">
-                    <i class="fa-solid fa-bars"></i>
+    <section class="top_manue pt-2">
+        <div class="container flex flex-col gap-[20px]">
+            <div class="t1-wraper md:flex md:justify-between">
+                <div class="t-left flex justify-between items-center md:items-center h-[50px]">
+                    <div class="bar text-3xl   md:hidden">
+                        <i class="fa-solid fa-bars text-xl"></i>
+                    </div>
+                   <div class="shop flex items-center">
+                    <img class="w-full mr-2 h-[20px]" src="/Image/Header/Logo.png" alt=""> 
+                   <p class="text-xl font-bold">Luminae</p>
+                   </div>
+                   <div class="card text-3xl md:hidden">
+                    <i class="fa-brands fa-cc-visa text-xl"></i>
+                   </div>
                 </div>
-               <div class="shop flex">
-                <img class="w-full mr-2" src="/Image/Header/Logo.png" alt=""> 
-               <p class="text-2xl font-bold">Luminae</p>
-               </div>
-               <div class="card text-3xl md:hidden">
-                <i class="fa-brands fa-cc-visa"></i>
-               </div>
-            </div>
-            <div class="t-right ">
-                <form class="flex items-center border-2 border-slate-400  justify-between mx-[50px]" action="">
-                    <input  class="px-3 py-3" type="text" placeholder="Search Products">
-                    <p class="mr-2">All Categories <i class="fa-solid fa-chevron-down"></i></p>
-                    <img class="mr-2" src="/Image/Header/Icon/Vector.png" alt="">
-                </form>
-            </div>
-        </div>
-        <div class="t2-wraper  justify-between mx-[50px] my-3 hidden  md:flex">
-            <div class="t2-left">
-                <ul class="flex">
-                    <li>About</li>
-                    <li class="ml-[60px]">Blog</li>
-                    <li class="ml-[60px]">Contact</li>
-                    <li class="ml-[60px]">Help & Support</li>
-                </ul>
-            </div>
-            <div class="t2-right">
-                <div class="social-media">
-                    <i class="fa-solid fa-camera text-slate-400 mr-[10px]"></i>
-                    <i class="fa-brands fa-facebook-f text-slate-400 mr-[10px]"></i>
-                    <i class="fa-brands fa-telegram text-slate-400"></i>
+                <div class="t-right h-[50px]">
+                    <form class="flex items-center border-2 border-slate-400  justify-between" action="">
+                        <input  class="px-3 py-3" type="text" placeholder="Search Products">
+                        <p class="mr-2 font-semibold">All Categories <i class="fa-solid fa-chevron-down"></i></p>
+                        <img class="mr-2" src="/Image/Header/Icon/Vector.png" alt="">
+                    </form>
                 </div>
             </div>
-
+            <div class="t2-wraper flex items-center justify-between">
+                <div class="t2-left">
+                    <ul class="flex items-center gap-[10px] font-semibold">
+                        <li>About</li>
+                        <li class="">Blog</li>
+                        <li class="">Contact</li>
+                        <li class="">Help & Support</li>
+                    </ul>
+                </div>
+                <div class="t2-right">
+                    <div class="social-media flex items-center gap-[10px]">
+                        <i class="fa-solid fa-camera text-slate-400 "></i>
+                        <i class="fa-brands fa-facebook-f text-slate-400 "></i>
+                        <i class="fa-brands fa-telegram text-slate-400"></i>
+                    </div>
+                </div>
+            </div>
         </div>
     </section>
-    <section class="category hidden md:block ">
-        <div class="category-wraper flex justify-between px-[50px] bg-black text-white h-[40px] items-center text-lg xl:h-[70px] xl:text-sm">
-            <p class="xl:text-2xl"> <i class="fa-solid fa-list-check"></i>Categories</p>
-            <div class="language flex">
-                <p>USD<i class="fa-solid fa-chevron-down"></i></p>
-                <p class="ml-[20px]">English<i class="fa-solid fa-chevron-down"></i></p>
+    <section class="category hidden md:block">
+        <div class="container flex justify-between  text-white bg-black items-center lg:text-sm py-[20px]">
+            <div class="category">
+                <p class="lg:text-xl"> <i class="fa-solid fa-list-check mr-[5px]"></i>Categories</p>
             </div>
-            <div class="mens-cosmatics sm:hidden xl:flex xl:items-center xl:w-[600px] border-x-2 border-x-amber-100 justify-center">
+            <div class="language flex items-center gap-[10px] text-sm">
+                <p>USD<i class="fa-solid fa-chevron-down ml-[5px]"></i></p>
+                <p class="">English<i class="fa-solid fa-chevron-down ml-[5px]"></i></p>
+            </div>
+            <div class="mens-cosmatics hidden lg:flex lg:items-center lg:w-[600px] border-x-2 border-x-amber-100 justify-center">
                 <img src="/Image/Header/Men cosmetic.png" alt="">
                 <div class="cosmetics-content ml-5">
                     <p>Weekly Men's Tollectries Coupons.</p>
                     <p>WE extend exclusive discounts to our male clientele</p>
                 </div>
             </div>
-            <div class="option flex">
-                <p class="mr-[50px]"><i class="fa-solid fa-user"></i>
+            <div class="option flex items-center gap-[15px]">
+                <p class=""><i class="fa-solid fa-user"></i>
                 Sign in</p>
-                <p class="mr-[50px]"><i class="fa-regular fa-heart"></i> Favourite</p>
+                <p class=""><i class="fa-regular fa-heart"></i> Favourite</p>
                 <p class=""><i class="fa-brands fa-cc-paypal"></i> Card</p>
             </div>
         </div>
     </section>
-    <section class="manu mt-[20px] w-full hidden md:block">
-        <ul class="flex mx-[50px] text-sm justify-between md:py-5 xl:text-lg">
-            <li class="font-serif text-amber-600">Woman</li>
-            <li class="ml-[2px] font-serif">Male</li>
-            <li class="ml-[2px] font-serif">Mother-Child</li>
-            <li class="ml-[2px] font-serif">Home & Furniture</li>
-            <li class="ml-[2px] font-serif">Super Market</li>
-            <li class="ml-[2px] font-serif">Cosmatics</li>
-            <li class="ml-[2px] font-serif">Shoe & Bag</li>
-            <li class="ml-[2px] font-serif">Electronic</li>
-            <li class="ml-[2px] font-serif">Sports & Outdoor</li>
-            <li class="ml-[2px] font-serif">Best Seller</li>
-        </ul>
+    <section class="manu hidden md:block">
+        <div class="container">
+            <ul class="flex text-sm justify-between gap-[5px]">
+                <li class="text-amber-600">Woman</li>
+                <li class="">Male</li>
+                <li class="">Mother-Child</li>
+                <li class="">Home & Furniture</li>
+                <li class="">Super Market</li>
+                <li class="">Cosmatics</li>
+                <li class="">Shoe & Bag</li>
+                <li class="">Electronic</li>
+                <li class="">Sports & Outdoor</li>
+                <li class="">Best Seller</li>
+            </ul>
+        </div>
     </section>
-    <section class="products-section mt-[20px] w-full md:hidden">
-        <div class="products-wrap mx-[50px] ">
+    <section class="products-section md:hidden">
+        <div class="container">
             <div class="single-item flex h-[280px]">
                 <div class="col-content bg-red-600 h-full flex flex-col justify-center w-1/2 text-white px-4">
-                    <h3 class="text-3xl font-semibold">Never-Ending <br> Summer</h3>
-                    <p class=" my-3 text-lg">Throwback Shirts & all-day dressed</p>
+                    <h3 class="text-2xl font-extrabold">Never-Ending <br> Summer</h3>
+                    <p class=" my-3">Throwback Shirts & all-day dressed</p>
                     <div class="link">
-                        <a class="text-lg border-b-2 border-lime-100" href="#">Explore all category</a>
+                        <a class=" border-b-2 border-lime-100" href="#">Explore all category</a>
                     </div>
                 </div>
                 <div class="img-box w-1/2">
                     <img class="w-full h-[280px]" src="/Image/Rectangle 1078.png" alt="">
                 </div>
             </div>
-            <div class="single-item flex h-[280px]">
+            <div class="single-item flex h-[280px] mt-[20px]">
                 <div class="col-content bg-blue-500 h-full flex flex-col justify-center w-1/2 text-white px-4">
-                    <h3 class="text-3xl font-sesmibold">Never-Ending <br> Summer</h3>
-                    <p class=" my-3 text-lg">Throwback Shirts & all-day dressed</p>
+                    <h3 class="text-2xl font-extrabold">Never-Ending <br> Summer</h3>
+                    <p class=" my-3 ">Throwback Shirts & all-day dressed</p>
                     <div class="link">
-                        <a class="text-lg border-b-2 border-lime-100" href="#">Explore all category</a>
+                        <a class="border-b-2 border-lime-100" href="#">Explore all category</a>
                     </div>
                 </div>
                 <div class="img-box w-1/2">
@@ -112,22 +117,22 @@
         </div>
     </section>
     <section class="feature hidden md:block">
-        <div class="feature-wraper flex h-[420px] xl:relative">
-           <div class="f-left w-1/2 xl:basis-[40%] ">
+        <div class="container flex lg:relative">
+           <div class="f-left w-1/2 lg:basis-[40%] ">
                 <div class="img-box h-full">
                     <img class="w-full h-full" src="/Image/top/left.png" alt="">
                 </div>
            </div>
            <div class="f-right w-1/2 xl:basis-[60%]">
-            <div class="content flex flex-col bg-sky-500 h-full text-center justify-center text-white">
-                <h1 class="text-2xl font-semibold mb-8">KIMONOS, CAFTANS <br> & PAREOS</h1>
-                <p class="text-lg ">Poolside glam included <br>from $4.99</p>
-                <div class="button mt-10">
-                    <a class="px-8 py-4 bg-green-400 hover:bg-green-600" href="#"> <i class="fa-solid fa-apple-whole mr-2"></i>SHOP NOW</a>
+                <div class="content flex flex-col bg-sky-500 h-full text-center justify-center text-white">
+                    <h1 class="text-2xl font-semibold mb-8">KIMONOS, CAFTANS <br> & PAREOS</h1>
+                    <p class="text-lg ">Poolside glam included <br>from $4.99</p>
+                    <div class="button mt-10">
+                        <a class="px-8 py-4 bg-green-400 hover:bg-green-600" href="#"> <i class="fa-solid fa-apple-whole mr-2"></i>SHOP NOW</a>
+                    </div>
                 </div>
-            </div>
            </div>
-           <div class="box hidden xl:absolute text-center  bg-slate-100 w-[228px] h-[123px] mt-[160px] ml-[430px] xl:flex xl:flex-col xl:justify-center">
+           <div class="box hidden lg:absolute text-center  bg-slate-100 w-[228px] h-[123px] mt-[160px] ml-[430px] xl:flex xl:flex-col lg:justify-center">
             <p class="my-6">Summer Essentials <br>
             <span class="text-red-500 font-semibold">20% off</span></p>
             <div class="date ">
@@ -136,144 +141,144 @@
            </div>
         </div>
     </section>
-
-    <section class="products flex justify-between flex-col mt-[30px] mx-[50px]">
-        <div class="heading flex justify-between ">
-            <h1 class="font-bold text-2xl">Flash Sales</h1>
-            <p>View all <i class="fa-solid fa-chevron-right"></i></p>
-        </div>
-        <div class="products-wraper flex flex-wrap justify-evenly xl:justify-between">
-            <div class="single-col basis-[95%] my-4 md:basis-[48%] xl:basis-[24%] xl:my-0">
-                <div class="box bg-slate-100 h-full md:flex md:flex-col md:justify-between">
-                    <div class="date text-center pt-3 md:flex md:items-center md:justify-center xl:w-[200px] xl:mx-auto xl:text-sm xl:flex-col">
-                        <p class="font-bold text-xl text-slate-400">Deal of the Day</p>
-                        <div class="time md:ml-3">
-                            <p class="text-2xl font-bold">12 : 43 : 12 </p>
-                            <p class="text-lg">hour min sec</p>
-                        </div>
-                    </div>
-                    <div class="img-box md:h-[160px] md:mx-[60px]">
-                        <img class="w-full md:h-full px-4 " src="/Image/photo bag 1.png" alt="">
-                    </div>
-                    <div class="content ml-5 mt-2">
-                        <div class="content-box md:flex md:justify-between md:items-center md:mr-5 xl:flex-col xl:items-start">
-                            <h1 class="font-bold text-xl my-2">Tonny Black</h1>
-                           <p>Shoulder Bag-white-plain</p>
-                        </div>
-                        <div class="content-box-2 md:flex md:justify-between xl:flex-col">
-                            <div class="star flex items-center text-yellow-500 my-2">
-                                <i class="fa-regular fa-star"></i>
-                                <i class="fa-regular fa-star"></i>
-                                <i class="fa-regular fa-star"></i>
-                                <i class="fa-regular fa-star"></i>
-                                <p class="text-black ml-3">(54)</p>
-                            </div>
-                            <div class="price flex justify-between mr-5 items-center ">
-                                <p class="text-red-500 font-semibold">$69.99</p>
-                                <p class="mx-4">$129.99</p>
-                                <p class="px-2 py-1 bg-red-500 text-white">-40%</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+    <section class="products_section">
+        <div class="container flex justify-between flex-col items-center">
+            <div class="heading">
+                <h1 class="font-bold text-4xl text-center">Flash Sales</h1>
             </div>
-            <div class="single-col basis-[95%] md:basis-[48%] md:my-4 xl:basis-[24%] xl:my-0">
-                <div class="box bg-slate-100 h-full md:flex md:flex-col md:justify-between">
-                    <div class="date text-center pt-3 md:flex md:items-center md:justify-center xl:w-[200px] xl:mx-auto xl:text-sm xl:flex-col">
-                        <p class="font-bold text-xl text-slate-400">Deal of the Day</p>
-                        <div class="time md:ml-3">
-                            <p class="text-2xl font-bold">12 : 43 : 12 </p>
-                            <p>hour  min  sec</p>
-                        </div>
-                    </div>
-                    <div class="img-box md:h-[180px] md:mx-[60px]">
-                        <img class="w-full md:h-full px-4" src="/Image/photo bag.png" alt="">
-                    </div>
-                    <div class="content ml-5 mt-2">
-                        <div class="content-box md:flex md:justify-between md:items-center md:mr-5 xl:flex-col xl:items-start">
-                            <h1 class="font-bold text-xl my-2">Reebok</h1>
-                           <p>women's Powder sneakers</p>
-                        </div>
-                        <div class="content-box-2 md:flex md:justify-between xl:flex-col">
-                            <div class="star flex items-center text-yellow-500 my-2">
-                                <i class="fa-regular fa-star"></i>
-                                <i class="fa-regular fa-star"></i>
-                                <i class="fa-regular fa-star"></i>
-                                <i class="fa-regular fa-star"></i>
-                                <p class="text-black ml-3">(54)</p>
-                            </div>
-                            <div class="price flex justify-between mr-5  items-center">
-                                <p class="text-red-500 font-semibold">$112.02</p>
-                                <p class="mx-4">$129.99</p>
-                                <p class="px-2 py-1 bg-red-500 text-white">-40%</p>
+            <div class="products-wraper flex md:flex-wrap justify-between gap-[10px] md:gap-[20px] mt-[20px]">
+                <div class="single-col w-[200px] md:basis-[48%] lg:basis-[24%]">
+                    <div class="box bg-slate-100 rounded-md flex flex-col gap-[10px] md:justify-between py-[20px] px-[10px]">
+                        <div class="date text-center md:flex md:items-center md:justify-center lg:w-[200px] lg:mx-auto lg:text-sm lg:flex-col">
+                            <p class="font-bold  text-slate-400">Deal of the Day</p>
+                            <div class="time md:ml-3">
+                                <p class="text-xl font-bold">12 : 43 : 12 </p>
+                                <p class="">hour min sec</p>
                             </div>
                         </div>
-                    </div>
-                </div>
-            </div>
-            <div class="single-col hidden md:block md:basis-[48%] xl:basis-[24%]">
-                <div class="box bg-slate-100 h-full md:flex md:flex-col md:justify-between">
-                    <div class="date text-center pt-3 md:flex md:items-center md:justify-center xl:w-[200px] xl:mx-auto xl:text-sm xl:flex-col">
-                        <p class="font-bold text-xl text-slate-400">Deal of the Day</p>
-                        <div class="time md:ml-3">
-                            <p class="text-2xl font-bold">12 : 43 : 12 </p>
-                            <p class="text-lg">hour min sec</p>
+                        <div class="img-box h-[100px] mx-[20px] md:mx-[50px]">
+                            <img class="w-full h-[100px] " src="/Image/photo bag 1.png" alt="">
                         </div>
-                    </div>
-                    <div class="img-box md:h-[140px] md:mx-[60px]">
-                        <img class="w-full h-full px-4" src="/Image/photo bag 2.png" alt="">
-                    </div>
-                    <div class="content ml-5 mt-2 ">
-                        <div class="content-box md:flex md:justify-between md:items-center md:mr-5 xl:flex-col xl:items-start">
-                            <h1 class="font-bold text-xl my-2">Patso</h1>
-                        <p>Shoulder Bag-pink-plain</p>
-                        </div>
-                        <div class="content-box-2 md:flex md:justify-between xl:flex-col">
-                            <div class="star flex items-center text-yellow-500 my-2">
-                                <i class="fa-regular fa-star"></i>
-                                <i class="fa-regular fa-star"></i>
-                                <i class="fa-regular fa-star"></i>
-                                <i class="fa-regular fa-star"></i>
-                                <p class="text-black ml-3">(54)</p>
+                        <div class="content mt-2">
+                            <div class="content-box md:flex md:justify-between md:items-center md:mr-5 xl:flex-col xl:items-start">
+                                <h1 class="font-bold">Tonny Black</h1>
+                               <p class="text-sm">Shoulder Bag-white-plain</p>
                             </div>
-                            <div class="price flex justify-between mr-5 items-center ">
-                                <p class="text-red-500 font-semibold">$69.99</p>
-                                <p class="mx-4">$129.99</p>
-                                <p class="px-2 py-1 bg-red-500 text-white">-40%</p>
+                            <div class="content-box-2 md:flex md:justify-between xl:flex-col">
+                                <div class="star flex items-center text-yellow-500 my-2">
+                                    <i class="fa-regular fa-star"></i>
+                                    <i class="fa-regular fa-star"></i>
+                                    <i class="fa-regular fa-star"></i>
+                                    <i class="fa-regular fa-star"></i>
+                                    <p class="text-black ml-3">(54)</p>
+                                </div>
+                                <div class="price flex justify-between mr-5 items-center text-sm">
+                                    <p class="text-red-500 font-semibold">$69.99</p>
+                                    <p class="mx-4">$129.99</p>
+                                    <p class="px-2 bg-red-500 text-white">-40%</p>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
-           </div>
-            <div class="single-col hidden md:block md:basis-[48%] xl:basis-[24%]">
-                <div class="box bg-slate-100 h-full md:flex md:flex-col md:justify-between">
-                    <div class="date text-center pt-3 md:flex md:items-center md:justify-center xl:w-[200px] xl:mx-auto xl:text-sm xl:flex-col">
-                        <p class="font-bold text-xl text-slate-400">Deal of the Day</p>
-                        <div class="time md:ml-3">
-                            <p class="text-2xl font-bold">12 : 43 : 12 </p>
-                            <p>hour  min  sec</p>
-                        </div>
-                    </div>
-                    <div class="img-box md:h-[180px] ">
-                        <img class="w-full h-full px-4 md:px-0" src="/Image/mid.png" alt="">
-                    </div>
-                    <div class="content ml-5 mt-2">
-                        <div class="content-box md:flex md:justify-between md:items-center md:mr-5 xl:flex-col xl:items-start">
-                            <h1 class="font-bold text-xl my-2">Sketchers</h1>
-                        <p>Sport-shoe 2102</p>
-                        </div>
-                        <div class="content-box-2 md:flex md:justify-between xl:flex-col">
-                            <div class="star flex items-center text-yellow-500 my-2">
-                                <i class="fa-regular fa-star"></i>
-                                <i class="fa-regular fa-star"></i>
-                                <i class="fa-regular fa-star"></i>
-                                <i class="fa-regular fa-star"></i>
-                                <p class="text-black ml-3">(54)</p>
+                <div class="single-col w-[200px] md:basis-[48%] lg:basis-[24%]">
+                    <div class="box bg-slate-100 rounded-md flex flex-col gap-[10px] md:justify-between py-[20px] px-[10px]">
+                        <div class="date text-center md:flex md:items-center md:justify-center lg:w-[200px] lg:mx-auto lg:text-sm lg:flex-col">
+                            <p class="font-bold  text-slate-400">Deal of the Day</p>
+                            <div class="time md:ml-3">
+                                <p class="text-xl font-bold">12 : 43 : 12 </p>
+                                <p>hour  min  sec</p>
                             </div>
-                            <div class="price flex justify-between mr-5  items-center" >
-                                <p class="text-red-500 font-semibold mr-4">$112.02</p>
-                                <p class="mr-4">$129.99</p>
-                                <p class="px-2 py-1 bg-red-500 text-white ">-40%</p>
+                        </div>
+                        <div class="img-box h-[100px] mx-[20px] md:mx-[50px]">
+                            <img class="w-full h-[100px] md:h-full" src="/Image/photo bag.png" alt="">
+                        </div>
+                        <div class="content mt-2">
+                            <div class="content-box md:flex md:justify-between md:items-center md:mr-5 xl:flex-col xl:items-start">
+                                <h1 class="font-bold ">Reebok</h1>
+                               <p class="text-sm">women's Powder sneakers</p>
+                            </div>
+                            <div class="content-box-2 md:flex md:justify-between xl:flex-col">
+                                <div class="star flex items-center text-yellow-500 my-2">
+                                    <i class="fa-regular fa-star"></i>
+                                    <i class="fa-regular fa-star"></i>
+                                    <i class="fa-regular fa-star"></i>
+                                    <i class="fa-regular fa-star"></i>
+                                    <p class="text-black ml-3">(54)</p>
+                                </div>
+                                <div class="price flex justify-between mr-5  items-center text-sm">
+                                    <p class="text-red-500 font-semibold">$112.02</p>
+                                    <p class="mx-4">$129.99</p>
+                                    <p class="px-2  bg-red-500 text-white">-40%</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="single-col hidden md:block md:basis-[48%] xl:basis-[24%]">
+                    <div class="box bg-slate-100 rounded-md flex flex-col gap-[10px] md:justify-between py-[20px] px-[10px]">
+                        <div class="date text-center md:flex md:items-center md:justify-center lg:w-[200px] lg:mx-auto lg:text-sm lg:flex-col">
+                            <p class="font-bold text-xl text-slate-400">Deal of the Day</p>
+                            <div class="time md:ml-3">
+                                <p class="text-2xl font-bold">12 : 43 : 12 </p>
+                                <p class="text-lg">hour min sec</p>
+                            </div>
+                        </div>
+                        <div class="img-box h-[100px] mx-[20px] md:mx-[50px]">
+                            <img class="w-full h-full" src="/Image/photo bag 2.png" alt="">
+                        </div>
+                        <div class="content mt-2 ">
+                            <div class="content-box md:flex md:justify-between md:items-center md:mr-5 xl:flex-col xl:items-start">
+                                <h1 class="font-bold text-xl my-2">Patso</h1>
+                            <p>Shoulder Bag-pink-plain</p>
+                            </div>
+                            <div class="content-box-2 md:flex md:justify-between xl:flex-col">
+                                <div class="star flex items-center text-yellow-500 my-2">
+                                    <i class="fa-regular fa-star"></i>
+                                    <i class="fa-regular fa-star"></i>
+                                    <i class="fa-regular fa-star"></i>
+                                    <i class="fa-regular fa-star"></i>
+                                    <p class="text-black ml-3">(54)</p>
+                                </div>
+                                <div class="price flex justify-between mr-5 items-center ">
+                                    <p class="text-red-500 font-semibold">$69.99</p>
+                                    <p class="mx-4">$129.99</p>
+                                    <p class="px-2 py-1 bg-red-500 text-white">-40%</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+               </div>
+                <div class="single-col hidden md:block md:basis-[48%] xl:basis-[24%]">
+                    <div class="box bg-slate-100 rounded-md flex flex-col gap-[10px] md:justify-between py-[20px] px-[10px]">
+                        <div class="date text-center md:flex md:items-center md:justify-center lg:w-[200px] lg:mx-auto lg:text-sm lg:flex-col">
+                            <p class="font-bold text-xl text-slate-400">Deal of the Day</p>
+                            <div class="time md:ml-3">
+                                <p class="text-2xl font-bold">12 : 43 : 12 </p>
+                                <p>hour  min  sec</p>
+                            </div>
+                        </div>
+                        <div class="img-box h-[100px] mx-[20px] md:mx-[50px]">
+                            <img class="w-full h-full" src="/Image/mid.png" alt="">
+                        </div>
+                        <div class="content mt-2">
+                            <div class="content-box md:flex md:justify-between md:items-center md:mr-5 xl:flex-col xl:items-start">
+                                <h1 class="font-bold text-xl my-2">Sketchers</h1>
+                            <p>Sport-shoe 2102</p>
+                            </div>
+                            <div class="content-box-2 md:flex md:justify-between xl:flex-col">
+                                <div class="star flex items-center text-yellow-500 my-2">
+                                    <i class="fa-regular fa-star"></i>
+                                    <i class="fa-regular fa-star"></i>
+                                    <i class="fa-regular fa-star"></i>
+                                    <i class="fa-regular fa-star"></i>
+                                    <p class="text-black ml-3">(54)</p>
+                                </div>
+                                <div class="price flex justify-between mr-5  items-center" >
+                                    <p class="text-red-500 font-semibold mr-4">$112.02</p>
+                                    <p class="mr-4">$129.99</p>
+                                    <p class="px-2 py-1 bg-red-500 text-white ">-40%</p>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -281,207 +286,209 @@
             </div>
         </div>
    </section>
-   <section class="trending-product mx-[50px] mt-[30px]">
-    <div class="heading flex justify-between items-center">
-        <h1 class="text-2xl font-bold">Trending must have</h1>
-        <p>View all  <i class="fa-solid fa-chevron-right"></i></p>
-    </div>
-    <div class="trending-wraper mt-5 xl:flex xl:justify-evenly">
-        <div class="single-box basis-[90%] md:hidden">
-            <div class="img-box w-full">
-                <img class="w-full h-[360px] bg-right" src="/Image/top.png" alt="">
-            </div>
-            <div class="content text-white bg-black px-5 pt-5 ">
-                <div class="heading flex justify-between items-center ">
-                    <div class="content">
-                        <h1 class="font-semibold text-xl">Cool & Sexy Calvin <br> Klein</h1>
-                         <p class="my-3 text-slate-300">Dotted dress-Casual</p>
-                    </div>
-                    <div class="button">
-                        <a class="px-3 py-2 border-2 border-slate-500 rounded " href="#">$89 Shop Now</a>
-                    </div>
-                </div>
-            </div>
+   <section class="trending-product">
+    <div class="container">
+        <div class="heading text-center">
+            <h1 class="text-4xl font-bold">Trending must have</h1>
         </div>
-        <div class="single-box basis-[90%] hidden md:block xl:basis-[32%]">
-            <div class="img-box w-full">
-                <img class="w-full h-[360px] bg-right" src="/Image/top2.png" alt="">
-            </div>
-            <div class="content text-white bg-black px-5 pt-5 xl:px-2">
-                <div class="heading flex justify-between items-center ">
-                    <div class="content">
-                        <h1 class="font-semibold text-xl xl:text-lg">Cool & Sexy Calvin Klein </h1>
-                         <p class="my-3 text-slate-300">Dotted dress-Casual</p>
-                    </div>
-                    <div class="button">
-                        <a class="px-6 py-2 border-2 border-slate-500 rounded xl:px-3 hover:border-red-600" href="#">$89 Shop Now</a>
-                    </div>
+        <div class="trending-wraper mt-[24px] md:flex md:flex-wrap md:justify-between md:gap-[20px]">
+            <div class="single-box basis-[90%] h-[435px] md:hidden">
+                <div class="img-box w-full">
+                    <img class="w-full h-[345px] bg-right" src="/Image/top.png" alt="">
                 </div>
-            </div>
-        </div>
-        <div class="single-box basis-[90%] md:my-4 xl:my-0 hidden md:block xl:basis-[32%]">
-            <div class="img-box">
-                <img class="w-full h-[360px]" src="/Image/top 1.png" alt="">
-            </div>
-            <div class="content text-white bg-black px-5 pt-5 xl:px-2">
-                <div class="heading flex justify-between items-center ">
-                    <div class="content">
-                        <h1 class="font-semibold text-xl xl:text-lg">Cool & Sexy Calvin Klein </h1>
-                         <p class="my-3 text-slate-300">Dotted dress-Casual</p>
-                    </div>
-                    <div class="button">
-                        <a class="px-6 py-2 border-2 border-slate-500 rounded xl:px-3 hover:border-red-600" href="#">$89 Shop Now</a>
+                <div class="content text-white bg-black px-2 pt-3 ">
+                    <div class="heading flex justify-between items-center ">
+                        <div class="content">
+                            <h1 class="font-semibold">Cool & Sexy Calvin <br> Klein</h1>
+                             <p class=" text-slate-300 py-2">Dotted dress-Casual</p>
+                        </div>
+                        <div class="button">
+                            <a class="px-3 py-2 border-2 border-slate-500 rounded " href="#">$89 Shop Now</a>
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
-        <div class="single-box basis-[90%] hidden md:block xl:basis-[32%]">
-            <div class="img-box">
-                <img class="w-full h-[360px]" src="/Image/top3.png" alt="">
+            <div class="single-box basis-[90%] md:basis-[48%] hidden md:block lg:basis-[32%]">
+                <div class="img-box w-full">
+                    <img class="w-full h-[360px] bg-right" src="/Image/top2.png" alt="">
+                </div>
+                <div class="content text-white bg-black px-5 pt-5 xl:px-2">
+                    <div class="heading flex justify-between items-center ">
+                        <div class="content">
+                            <h1 class="font-semibold text-lg lg:text-lg">Cool & Sexy Calvin </h1>
+                             <p class="my-3 text-slate-300">Dotted dress-Casual</p>
+                        </div>
+                        <div class="button">
+                            <a class="px-3 py-2 border-2 border-slate-500 rounded lg:px-3 hover:border-red-600" href="#">$89 Shop Now</a>
+                        </div>
+                    </div>
+                </div>
             </div>
-            <div class="content text-white bg-black px-5 pt-5 xl:px-2">
-                <div class="heading flex justify-between items-center ">
-                    <div class="content">
-                        <h1 class="font-semibold text-xl xl:text-lg">Beige Coat Zara</h1>
-                         <p class="my-3 text-slate-300">Cream-Brown-Formal</p>
-                    </div>
-                    <div class="button">
-                        <a class="px-6 py-2 border-2 border-slate-500 rounded xl:px-3 hover:border-red-600" href="#">$102 Shop Now</a>
+            <div class="single-box basis-[90%] md:basis-[48%] hidden md:block lg:basis-[32%]">
+                <div class="img-box">
+                    <img class="w-full h-[360px]" src="/Image/top 1.png" alt="">
+                </div>
+                <div class="content text-white bg-black px-5 pt-5 lg:px-2">
+                    <div class="heading flex justify-between items-center ">
+                        <div class="content">
+                            <h1 class="font-semibold text-lg lg:text-lg">Cool & Sexy Calvin</h1>
+                             <p class="my-3 text-slate-300">Dotted dress-Casual</p>
+                        </div>
+                        <div class="button">
+                            <a class="px-3 py-2 border-2 border-slate-500 rounded lg:px-3 hover:border-red-600" href="#">$89 Shop Now</a>
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
-    </div>
-   </section>
-   <section class="top-100 mt-[30px] mx-[50px]">
-    <div class="heading flex justify-between">
-         <h1 class="text-2xl font-bold font-serif">Top 100</h1>
-         <p>View all <i class="fa-solid fa-chevron-right"></i></p>
-    </div>
-    <div class="top-wraper mt-5 md:flex md:flex-wrap md:justify-evenly">
-        <div class="single-box basis-[90%] bg-slate-100 md:basis-[45%] xl:basis-[23%]">
-            <div class="img-box">
-                <img class="w-full h-[380px] xl:h-[330px]" src="/Image/Top 100/photo.png" alt="">
+            <div class="single-box basis-[90%] md:basis-[48%] hidden md:block lg:basis-[32%]">
+                <div class="img-box">
+                    <img class="w-full h-[360px]" src="/Image/top3.png" alt="">
+                </div>
+                <div class="content text-white bg-black px-5 pt-5 lg:px-2">
+                    <div class="heading flex justify-between items-center ">
+                        <div class="content">
+                            <h1 class="font-semibold text-lg lg:text-lg">Beige Coat Zara</h1>
+                             <p class="my-3 text-slate-300">Cream-Brown-Formal</p>
+                        </div>
+                        <div class="button">
+                            <a class="px-3 py-2 border-2 border-slate-500 rounded lg:px-3 hover:border-red-600" href="#">$102 Shop Now</a>
+                        </div>
+                    </div>
+                </div>
             </div>
-            <div class="content px-6">
-                <div class="text flex justify-between items-center">
-                    <div class="info mt-4">
-                        <h1 class="text-lg font-semibold">Mango</h1>
-                        <p class="text-slate-500">Kimono & Caftan-Black-Regular fit</p>
-                    </div>
-                    <div class="icon">
-                        <i class="fa-regular fa-heart text-2xl"></i>
-                    </div>
-                </div>
-                <div class="star text-yellow-500 flex items-center my-3 text-xl">
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <p class=" ml-3 text-slate-400 text-lg">(289)</p>
-                </div>
-                <div class="price flex text-lg">
-                    <p class="text-red-500 font-semibold">$228</p>
-                    <p class="text-slate-400 ml-3">$290</p>
-                    <p class="text-red-400 ml-3">-10%</p>
-                </div>
-            </div>               
-        </div>
-        <div class="single-box basis-[90%] bg-slate-100 hidden md:block md:basis-[45%] xl:basis-[23%]">
-            <div class="img-box">
-                <img class="w-full h-[380px] xl:h-[330px]" src="/Image/Top 100/photo 1.png" alt="">
-            </div>
-            <div class="content px-6">
-                <div class="text flex justify-between items-center">
-                    <div class="info mt-4">
-                        <h1 class="text-lg font-semibold">Zara</h1>
-                        <p class="text-slate-500">Midi top-Daily fit</p>
-                    </div>
-                    <div class="icon">
-                        <i class="fa-regular fa-heart text-2xl"></i>
-                    </div>
-                </div>
-                <div class="star text-yellow-500 flex items-center my-3 text-xl">
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <p class=" ml-3 text-slate-400 text-lg">(523)</p>
-                </div>
-                <div class="price flex text-lg">
-                    <p class="text-red-500 font-semibold">$95</p>
-                    <p class="text-slate-400 ml-3">$145</p>
-                    <p class="text-red-400 ml-3">-7%</p>
-                </div>
-            </div>               
-        </div>
-        <div class="single-box basis-[90%] bg-slate-100 hidden md:block md:basis-[45%] md:mt-5 xl:basis-[23%] xl:mt-0">
-            <div class="img-box">
-                <img class="w-full h-[380px] xl:h-[330px]" src="/Image/Top 100/photo 2.png" alt="">
-            </div>
-            <div class="content px-6">
-                <div class="text flex justify-between items-center">
-                    <div class="info mt-4">
-                        <h1 class="text-lg font-semibold">Uniqlo</h1>
-                        <p class="text-slate-500">Midi atlas Silm fit-bohemlan</p>
-                    </div>
-                    <div class="icon">
-                        <i class="fa-regular fa-heart text-2xl"></i>
-                    </div>
-                </div>
-                <div class="star text-yellow-500 flex items-center my-3 text-xl">
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <p class=" ml-3 text-slate-400 text-lg">(86)</p>
-                </div>
-                <div class="price flex text-lg">
-                    <p class="text-red-500 font-semibold">$125</p>
-                    <p class="text-slate-400 ml-3">$156</p>
-                    <p class="text-red-400 ml-3">-8%</p>
-                </div>
-            </div>               
-        </div>
-        <div class="single-box basis-[90%] bg-slate-100 hidden md:block md:basis-[45%] md:mt-5 xl:basis-[23%] xl:mt-0">
-            <div class="img-box">
-                <img class="w-full h-[380px] xl:h-[330px]" src="/Image/Top 100/photo 3.png" alt="">
-            </div>
-            <div class="content px-6">
-                <div class="text flex justify-between items-center">
-                    <div class="info mt-4">
-                        <h1 class="text-lg font-semibold">Mango dress</h1>
-                        <p class="text-slate-500">Kimono & Caftan-Colorful-Night club fit</p>
-                    </div>
-                    <div class="icon">
-                        <i class="fa-regular fa-heart text-2xl"></i>
-                    </div>
-                </div>
-                <div class="star text-yellow-500 flex items-center my-3 text-xl">
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <p class=" ml-3 text-slate-400 text-lg">(121)</p>
-                </div>
-                <div class="price flex text-lg">
-                    <p class="text-red-500 font-semibold">$365</p>
-                    <p class="text-slate-400 ml-3">$487</p>
-                    <p class="text-red-400 ml-3">-15%</p>
-                </div>
-            </div>               
         </div>
     </div>
    </section>
-   <section class="products-section mt-[40px] mx-[50px] hidden md:block">
-    <div class="products-wrap basis-[90%] md:flex md:justify-evenly">
-        <div class="single-item flex h-[280px] md:basis-[45%]">
+   <section class="topProduct">
+        <div class="container">
+            <div class="heading text-center">
+                <h1 class="text-4xl font-bold font-serif">Top 100</h1>
+             </div>
+            <div class="top-wraper mt-[24px] md:flex md:flex-wrap md:justify-between gap-[20px]">
+                <div class="single-box pb-[20px] bg-slate-100 md:basis-[48%] lg:basis-[23%]">
+                    <div class="img-box">
+                        <img class="w-full h-[330px] lg:h-[330px]" src="/Image/Top 100/photo.png" alt="">
+                    </div>
+                    <div class="content px-6">
+                        <div class="text flex justify-between items-center">
+                            <div class="info mt-4">
+                                <h1 class="text-lg font-semibold">Mango</h1>
+                                <p class="text-slate-500">Kimono & Caftan-Black-Regular fit</p>
+                            </div>
+                            <div class="icon">
+                                <i class="fa-regular fa-heart text-2xl"></i>
+                            </div>
+                        </div>
+                        <div class="star text-yellow-500 flex items-center my-3 text-xl">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <p class=" ml-3 text-slate-400 text-lg">(289)</p>
+                        </div>
+                        <div class="price flex text-lg">
+                            <p class="text-red-500 font-semibold">$228</p>
+                            <p class="text-slate-400 ml-3">$290</p>
+                            <p class="text-red-400 ml-3">-10%</p>
+                        </div>
+                    </div>               
+                </div>
+                <div class="single-box pb-[20px] basis-[90%] bg-slate-100 hidden md:block md:basis-[48%] lg:basis-[23%]">
+                    <div class="img-box">
+                        <img class="w-full h-[330px]" src="/Image/Top 100/photo 1.png" alt="">
+                    </div>
+                    <div class="content px-6">
+                        <div class="text flex justify-between items-center">
+                            <div class="info mt-4">
+                                <h1 class="text-lg font-semibold">Zara</h1>
+                                <p class="text-slate-500">Midi top-Daily fit</p>
+                            </div>
+                            <div class="icon">
+                                <i class="fa-regular fa-heart text-2xl"></i>
+                            </div>
+                        </div>
+                        <div class="star text-yellow-500 flex items-center my-3 text-xl">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <p class=" ml-3 text-slate-400 text-lg">(523)</p>
+                        </div>
+                        <div class="price flex text-lg">
+                            <p class="text-red-500 font-semibold">$95</p>
+                            <p class="text-slate-400 ml-3">$145</p>
+                            <p class="text-red-400 ml-3">-7%</p>
+                        </div>
+                    </div>               
+                </div>
+                <div class="single-box  pb-[20px] basis-[90%] bg-slate-100 hidden md:block md:basis-[48%] lg:basis-[23%]">
+                    <div class="img-box">
+                        <img class="w-full h-[330px]" src="/Image/Top 100/photo 2.png" alt="">
+                    </div>
+                    <div class="content px-6">
+                        <div class="text flex justify-between items-center">
+                            <div class="info mt-4">
+                                <h1 class="text-lg font-semibold">Uniqlo</h1>
+                                <p class="text-slate-500">Midi atlas Silm fit-bohemlan</p>
+                            </div>
+                            <div class="icon">
+                                <i class="fa-regular fa-heart text-2xl"></i>
+                            </div>
+                        </div>
+                        <div class="star text-yellow-500 flex items-center my-3 text-xl">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <p class=" ml-3 text-slate-400 text-lg">(86)</p>
+                        </div>
+                        <div class="price flex text-lg">
+                            <p class="text-red-500 font-semibold">$125</p>
+                            <p class="text-slate-400 ml-3">$156</p>
+                            <p class="text-red-400 ml-3">-8%</p>
+                        </div>
+                    </div>               
+                </div>
+                <div class="single-box  pb-[20px] basis-[90%] bg-slate-100 hidden md:block md:basis-[48%] lg:basis-[23%]">
+                    <div class="img-box">
+                        <img class="w-full h-[330px]" src="/Image/Top 100/photo 3.png" alt="">
+                    </div>
+                    <div class="content px-6">
+                        <div class="text flex justify-between items-center">
+                            <div class="info mt-4">
+                                <h1 class="text-lg font-semibold">Mango dress</h1>
+                                <p class="text-slate-500">Kimono & Caftan-Colorful-Night club fit</p>
+                            </div>
+                            <div class="icon">
+                                <i class="fa-regular fa-heart text-2xl"></i>
+                            </div>
+                        </div>
+                        <div class="star text-yellow-500 flex items-center my-3 text-xl">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <p class=" ml-3 text-slate-400 text-lg">(121)</p>
+                        </div>
+                        <div class="price flex text-lg">
+                            <p class="text-red-500 font-semibold">$365</p>
+                            <p class="text-slate-400 ml-3">$487</p>
+                            <p class="text-red-400 ml-3">-15%</p>
+                        </div>
+                    </div>               
+                </div>
+            </div> 
+        </div> 
+   </section>
+   <section class="products-section hidden md:block">
+    <div class="container basis-[100%] md:flex md:justify-between md:gap-[20px]">
+        <div class="single-item flex h-[280px] md:basis-[48%]">
             <div class="col-content bg-red-600 h-full flex flex-col justify-center w-1/2 text-white px-4">
-                <h3 class="text-3xl font-semibold">Never-Ending <br> Summer</h3>
+                <h3 class="text-2xl font-semibold">Never Ending <br> Summer</h3>
                 <p class=" my-3 text-lg">Throwback Shirts & all-day dressed</p>
                 <div class="link">
                     <a class="text-sm border-b-2 border-lime-100" href="#">Explore all category</a>
@@ -491,9 +498,9 @@
                 <img class="w-full h-[280px]" src="/Image/Rectangle 1078.png" alt="">
             </div>
         </div>
-        <div class="single-item flex h-[280px] basis-[45%]">
+        <div class="single-item flex h-[280px] basis-[48%]">
             <div class="col-content bg-sky-900 h-full flex flex-col justify-center w-1/2 text-white px-4">
-                <h3 class="text-3xl font-sesmibold">The most famous sport brands</h3>
+                <h3 class="text-2xl font-sesmibold">The most famous sport brands</h3>
                 <p class=" my-3 text-lg">get in gym essentials</p>
                 <div class="link">
                     <a class="text-sm border-b-2 border-lime-100" href="#">Explore all category</a>
@@ -504,23 +511,25 @@
             </div>
         </div>
     </div>
-</section>
-<section class="magsafe mt-[30px] bg-rose-100 hidden md:block">
-    <div class="magsafe-wraper flex items-center h-[220px] px-[70px] justify-evenly">
-        <div class="content basis-[45%]">
-            <h1 class="font-semibold text-xl">MAGSAFE</h1>
-            <p class="text-slate-600 mt-2">Snap on a magnetic case, wellet or both And get faster wireless charging</p>
-        </div>
-        <div class="img-box basis-[45%] w-full h-[180px] xl:h-full">
-            <img class="w-full h-full" src="/Image/Iphone.png" alt="">
+   </section>
+   <section class="magsafe">
+    <div class="container bg-rose-100">
+        <div class="magsafe-wraper flex items-center justify-center gap-[20px] h-[220px]">
+            <div class="content basis-[50%]">
+                <h1 class="font-semibold text-xl">MAGSAFE</h1>
+                <p class="text-slate-600 mt-2">Snap on a magnetic case, wellet or both And get faster wireless charging</p>
+            </div>
+            <div class="img-box basis-[50%] h-[180px]">
+                <img class="w-full h-full" src="/Image/Iphone.png" alt="">
+            </div>
         </div>
     </div>
-</section>
-<section class="products-section mt-[40px] mx-[50px] hidden md:block">
-    <div class="products-wrap basis-[90%] md:flex md:justify-evenly">
-        <div class="single-item flex h-[280px] md:basis-[45%]">
+   </section>
+   <section class="products-section hidden md:block">
+    <div class="container basis-[90%] md:flex md:justify-between">
+        <div class="single-item flex h-[280px] md:basis-[48%]">
             <div class="col-content bg-pink-600 h-full flex flex-col justify-center w-1/2 text-white px-4">
-                <h3 class="text-3xl font-semibold">The Pinky Barbie Edition</h3>
+                <h3 class="text-2xl font-semibold">The Pinky Barbie Edition</h3>
                 <p class=" my-3 text-lg">Lets play dress up</p>
                 <div class="link">
                     <a class="text-sm border-b-2 border-lime-100" href="#">Explore all category</a>
@@ -530,9 +539,9 @@
                 <img class="w-full h-[280px]" src="/Image/Rectangle 1081.png" alt="">
             </div>
         </div>
-        <div class="single-item flex h-[280px] basis-[45%]">
+        <div class="single-item flex h-[280px] basis-[48%]">
             <div class="col-content bg-sky-500 h-full flex flex-col justify-center w-1/2 text-white px-4">
-                <h3 class="text-3xl font-sesmibold">Best Sellers Everyone Love</h3>
+                <h3 class="text-2xl font-sesmibold">Best Sellers Everyone Love</h3>
                 <p class=" my-3 text-lg">Poolside glam include</p>
                 <div class="link">
                     <a class="text-sm border-b-2 border-lime-100" href="#">Explore all category</a>
@@ -543,87 +552,88 @@
             </div>
         </div>
     </div>
-</section>
-<section class="luminae-store  md:flex flex-col items-center mt-[30px] hidden md:-mb-[80px]">
-    <div class="box w-[570px] h-[190px] bg-blue-800 text-center flex flex-col justify-center rounded ">
-        <h1 class="text-2xl font-bold text-slate-400">Luminae Store</h1>
-        <p class="my-4 font-semibold text-slate-300">Register your email not to miss the last minutes off+ Free delivery</p>
-        <form class="bg-white border-1 w-[300px] mx-auto flex justify-between items-center px-3" action="">
-            <input class="py-2" type="text" placeholder="Enter Your Email">
-            <i class="fa-regular fa-paper-plane"></i>
-        </form>
+   </section>
+   <section class="luminae-store">
+    <div class="container md:flex flex-col items-center">
+        <div class="box py-[50px] px-[20px] gap-[10px] bg-blue-800 text-center flex flex-col justify-center rounded-md ">
+            <h1 class="text-2xl font-bold text-black">Luminae Store</h1>
+            <p class="font-semibold text-slate-300">Register your email not to miss the last minutes off+ Free delivery</p>
+            <form class="bg-white rounded-md w-[300px] mx-auto flex justify-between items-center px-3 py-[5px]" action="">
+                <input class="py-2" type="text" placeholder="Enter Your Email">
+                <i class="fa-regular fa-paper-plane"></i>
+            </form>
+        </div>
     </div>
-</section>
-<section class="describe-section mx-[50px] bg-emerald-100 mt-[30px] xl:h-[350px]">
-    <div class="describe-wraper flex flex-wrap justify-evenly py-10 md:w-[440px] mx-auto xl:w-full  xl:py-0 xl:pt-[80px]">
-        <div class="single-box basis-[48%] text-center py-10 xl:basis-[24%] xl:py-0">
-             <div class="heading">
-                <h1 class="text-xl font-bold">Company</h1>
-             </div>
-             <div class="content mt-5 text-slate-400">
-                <p>About Us</p>
-                <p class="py-3">Our Store</p>
+   </section>
+   <section class="describe-section  bg-slate-200">
+        <div class="container flex flex-wrap justify-between pb-[50px] gap-[20px]">
+            <div class="single-box flex flex-col gap-[20px] basis-[45%] lg:basis-[24%]">
+                <div class="heading">
+                    <h1 class=" font-bold text-lg">Company</h1>
+                </div>
+                <div class="content text-slate-400 text-sm flex flex-col gap-[5px]">
+                    <p>About Us</p>
+                    <p class="">Our Store</p>
+                    <p>Contact Us</p>
+                </div>
+            </div>
+            <div class="single-box basis-[45%] lg:basis-[24%] flex flex-col gap-[20px]">
+                <div class="heading">
+                    <h1 class="font-bold text-lg">Career Opportunities</h1>
+                </div>
+                <div class="content text-slate-400 text-sm flex flex-col gap-[5px]">
+                    <p>Selling Programs</p>
+                    <p class="">Advertise</p>
+                    <p>Cooperation</p>
+                </div>
+            </div>
+            <div class="single-box basis-[45%] lg:basis-[24%] flex flex-col gap-[20px]">
+                <div class="heading">
+                    <h1 class="font-bold text-lg">How to buy</h1>
+                </div>
+                <div class="content text-slate-400 text-sm flex flex-col gap-[5px]">
+                    <p>Making Payment</p>
+                    <p class="">Delivery Option</p>
+                    <p class="">Buyer Protection</p>
+                    <p>New User Guide</p>
+                </div>
+            </div>
+            <div class="single-box basis-[45%] lg:basis-[24%] flex flex-col gap-[20px]">
+                <div class="heading">
+                <h1 class="font-bold text-lg">Help</h1>
+                </div>
+            <div class="content text-slate-400 text-sm flex flex-col gap-[5px]">
                 <p>Contact Us</p>
-             </div>
-        </div>
-        <div class="single-box basis-[48%] text-center py-10 xl:basis-[24%] xl:py-0">
-            <div class="heading">
-               <h1 class="font-bold text-xl">Career Opportunities</h1>
+                <p class="">FAQ</p>
+                <p>Privacy Policy</p>
             </div>
-            <div class="content mt-5 text-slate-400">
-               <p>Selling Programs</p>
-               <p class="py-3">Advertise</p>
-               <p>Cooperation</p>
-            </div>
-       </div>
-       <div class="single-box basis-[48%] text-center xl:basis-[24%]">
-            <div class="heading">
-               <h1 class="font-bold text-xl">How to buy</h1>
-            </div>
-            <div class="content mt-5 text-slate-400">
-               <p>Making Payment</p>
-               <p class="py-3">Delivery Option</p>
-               <p class="pb-3">Buyer Protection</p>
-               <p>New User Guide</p>
             </div>
         </div>
-        <div class="single-box basis-[48%] text-center xl:basis-[24%]">
-            <div class="heading">
-               <h1 class="font-bold text-xl">Help</h1>
+   </section>
+   <section class="footer md:border-t-2 border-slate-500">
+    <div class="container">
+        <div class="footer-wrap  md:flex md:justify-between  md:items-center">
+            <div class="payment flex md:hidden text-4xl h-[78px] justify-evenly text-slate-800 md:text-3xl">
+                <i class="fa-brands fa-cc-visa"></i>
+                <i class="fa-brands fa-cc-mastercard"></i>
+                <i class="fa-brands fa-cc-paypal"></i>
             </div>
-          <div class="content mt-5 text-slate-400">
-            <p>Contact Us</p>
-            <p class="py-3">FAQ</p>
-            <p>Privacy Policy</p>
-          </div>
+        </div>
+        <div class="footer-wraper2 text-sm text-slate-500 text-center">
+            <div class="address">
+                <p>165-179 Forster Road City of Monash, Melbourn, Australia</p>
+            </div>
+            <div class="copyright">
+               <p> &copy; 2023 Copyright inreserved for lumine shop</p>
+            </div>
+            <div class="social-link">
+                <i class="fa-brands fa-instagram mr-4 "></i>
+                <i class="fa-brands fa-facebook-f mr-4"></i>
+                <i class="fa-brands fa-telegram "></i>
+            </div>
         </div>
     </div>
-</section>
-<section class="footer mt-[30px] mx-[80px]">
-    <div class="footer-wrap  md:flex md:justify-between md:border-b-2 border-slate-500 md:h-[40px] md:items-center">
-        <div class="payment flex text-6xl justify-evenly text-slate-500 md:text-3xl">
-            <i class="fa-brands fa-cc-visa"></i>
-            <i class="fa-brands fa-cc-mastercard md:ml-4"></i>
-            <i class="fa-brands fa-cc-paypal md:ml-4"></i>
-        </div>
-        <div class="language hidden md:block text-black">
-            <p>English <i class="fa-solid fa-chevron-down"></i></p>
-        </div>
-    </div>
-    <div class="footer-wraper2 mt-5 hidden md:flex md:justify-between h-[60px]">
-        <div class="address">
-            <p>165-179 Forster Road City of Monash, Melbourn, Australia</p>
-        </div>
-        <div class="copyright hidden xl:block">
-           <p> &copy; 2023 Copyright inreserved for lumine shop</p>
-        </div>
-        <div class="social-link">
-            <i class="fa-brands fa-instagram mr-4 "></i>
-            <i class="fa-brands fa-facebook-f mr-4"></i>
-            <i class="fa-brands fa-telegram "></i>
-        </div>
-    </div>
-</section>
+   </section>
 
 
     <script src="https://kit.fontawesome.com/862c32b35b.js" crossorigin="anonymous"></script>
