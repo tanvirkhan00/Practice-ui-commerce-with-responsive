@@ -1,5 +1,5 @@
 /* Google Fonts Link */
-@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Lobster&family=Protest+Guerrilla&family=SUSE:wght@100..800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Acme&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=SUSE:wght@100..800&display=swap');
 
 @tailwind base;
 @tailwind components;
@@ -9,5 +9,37 @@
 @layer base{
     section{
         @apply pt-10 pb-4;
+    }
+    body {
+        @apply font-suseFont bg-bodyColor;
+    }
+}
+@layer components {
+    .link-hover {
+        @apply border-b-2 border-transparent cursor-pointer ease-linear duration-200 hover:border-black
+    }
+    .icon-hover {
+        @apply ease-linear duration-200 cursor-pointer hover:scale-105 hover:text-firstColor
+    }
+    .inputBox-hover {
+        @apply ease-linear border-2 border-transparent duration-200 rounded-md hover:border-firstColor
+    }
+    .imageUp-hover {
+        @apply ease-linear duration-200 hover:scale-105
+    }
+    .btn-hover {
+        @apply border-2 bg-transparent border-firstColor rounded-md px-6 py-4  ease-linear duration-200 hover:bg-whiteColor hover:text-black
+    }
+    .content-hover {
+        @apply bg-secondColor border-2 rounded-md border-transparent ease-linear duration-200 hover:border-thirdColor hover:scale-105
+    }
+    .trendingContent-hover {
+        @apply border-2 border-transparent ease-linear duration-200 rounded-md overflow-hidden hover:border-thirdColor hover:scale-105
+    }
+    .trendingContentBtn {
+        @apply border-2 bg-transparent overflow-hidden border-firstColor rounded-md px-3 py-2 font-acmeFont  ease-linear duration-200 hover:bg-whiteColor hover:text-black
+    }
+    .footer-hover {
+        @apply ease-linear duration-200 cursor-pointer hover:text-firstColor
     }
 }
