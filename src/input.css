@@ -16,7 +16,7 @@
 }
 @layer components {
     .link-hover {
-        @apply border-b-2 border-transparent cursor-pointer ease-linear duration-200 hover:border-black
+        @apply border-b-2 rounded-md border-transparent cursor-pointer ease-linear duration-200 hover:border-black
     }
     .icon-hover {
         @apply ease-linear duration-200 cursor-pointer hover:scale-105 hover:text-firstColor

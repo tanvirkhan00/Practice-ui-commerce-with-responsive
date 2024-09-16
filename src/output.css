@@ -587,6 +587,7 @@ body{
 
 .link-hover{
   cursor: pointer;
+  border-radius: 0.375rem;
   border-bottom-width: 2px;
   border-color: transparent;
   transition-duration: 200ms;
@@ -816,6 +817,10 @@ body{
   margin-top: 24px;
 }
 
+.mr-3{
+  margin-right: 0.75rem;
+}
+
 .flex{
   display: flex;
 }
@@ -862,10 +867,6 @@ body{
 
 .h-\[360px\]{
   height: 360px;
-}
-
-.h-\[435px\]{
-  height: 435px;
 }
 
 .h-\[50px\]{
@@ -971,15 +972,6 @@ body{
 .border-x-2{
   border-left-width: 2px;
   border-right-width: 2px;
-}
-
-.border-b-2{
-  border-bottom-width: 2px;
-}
-
-.border-lime-100{
-  --tw-border-opacity: 1;
-  border-color: rgb(236 252 203 / var(--tw-border-opacity));
 }
 
 .border-slate-500{
@@ -1282,12 +1274,24 @@ body{
     height: 100%;
   }
 
+  .md\:h-\[360px\]{
+    height: 360px;
+  }
+
+  .md\:h-\[250px\]{
+    height: 250px;
+  }
+
   .md\:w-\[300px\]{
     width: 300px;
   }
 
   .md\:basis-\[48\%\]{
     flex-basis: 48%;
+  }
+
+  .md\:flex-col{
+    flex-direction: column;
   }
 
   .md\:flex-wrap{
@@ -1310,8 +1314,17 @@ body{
     gap: 20px;
   }
 
+  .md\:gap-\[10px\]{
+    gap: 10px;
+  }
+
   .md\:border-t-2{
     border-top-width: 2px;
+  }
+
+  .md\:px-5{
+    padding-left: 1.25rem;
+    padding-right: 1.25rem;
   }
 
   .md\:text-3xl{
