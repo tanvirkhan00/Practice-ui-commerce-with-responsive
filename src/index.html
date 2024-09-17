@@ -12,12 +12,14 @@
    <title>Resposive || Luminae Website</title>
 </head>
 <body>
-    <section class="top_manue pt-2">
+
+    <!-- Start Header Section -->
+    <section class="header pt-2" id="home">
         <div class="container flex flex-col gap-[20px] lg:flex-row lg:justify-between">
             <div class="t1-wraper md:flex md:justify-between lg:gap-[20px]">
                 <div class="t-left flex justify-between items-center md:items-center h-[50px]">
                     <div class="bar text-3xl   md:hidden">
-                        <i class="fa-solid fa-bars text-xl"></i>
+                        <i class="fa-solid fa-bars text-xl hover:text-firstColor"></i>
                     </div>
                    <div class="shop flex items-center gap-[5px]">
                     <img class="w-full h-[30px]" src="/Image/Header/Logo.png" alt=""> 
@@ -37,10 +39,10 @@
             <div class="t2-wraper flex items-center justify-between lg:gap-[20px]">
                 <div class="t2-left">
                     <ul class="flex items-center gap-[10px] font-semibold">
-                        <li class="link-hover">About</li>
-                        <li class="link-hover">Blog</li>
-                        <li class="link-hover">Contact</li>
-                        <li class="link-hover">Help & Support</li>
+                        <li class="link-hover"><a href="#home">Home</a></li>
+                        <li class="link-hover"><a href="#flasSale">Flash Sales</a></li>
+                        <li class="link-hover"><a href="#topProduct">Top Product</a></li>
+                        <li class="link-hover"><a href="#helpSupport">Help & Support</a></li>
                     </ul>
                 </div>
                 <div class="t2-right">
@@ -53,6 +55,9 @@
             </div>
         </div>
     </section>
+    <!-- End Header Section -->
+
+    <!-- Start Category Section -->
     <section class="category hidden md:block bg-black pt-[10px]">
         <div class="container flex justify-between  text-white items-center lg:text-sm">
             <div class="category">
@@ -77,6 +82,9 @@
             </div>
         </div>
     </section>
+    <!-- End Category Section -->
+
+    <!-- Start Manue Section -->
     <section class="manu hidden md:block py-[30px]">
         <div class="container">
             <ul class="flex text-sm justify-between gap-[5px]">
@@ -93,6 +101,9 @@
             </ul>
         </div>
     </section>
+    <!-- End Manue Section -->
+
+    <!-- Start Product Section -->
     <section class="products-section md:hidden">
         <div class="container">
             <div class="single-item flex h-[280px] trendingContent-hover">
@@ -115,6 +126,9 @@
             </div>
         </div>
     </section>
+    <!-- End Product Section -->
+
+    <!-- Start Feature Section -->
     <section class="feature hidden md:block">
         <div class="container flex lg:relative">
            <div class="f-left w-1/2 lg:basis-[40%] ">
@@ -140,7 +154,10 @@
            </div>
         </div>
     </section>
-    <section class="products_section">
+    <!-- End Feature Section -->
+
+    <!-- Start Product Section -->
+    <section class="products_section" id="flasSale">
         <div class="container flex justify-between flex-col items-center">
             <div class="heading">
                 <h1 class="font-bold text-4xl text-center font-playfairFont">Flash Sales</h1>
@@ -285,6 +302,9 @@
             </div>
         </div>
    </section>
+   <!-- End Product Section -->
+
+   <!-- Start Trending Product Section -->
    <section class="trending-product">
     <div class="container">
         <div class="heading text-center">
@@ -358,7 +378,10 @@
         </div>
     </div>
    </section>
-   <section class="topProduct">
+   <!-- End Trending Product Section -->
+
+   <!-- Start Top Product Section -->
+   <section class="topProduct" id="topProduct">
         <div class="container">
             <div class="heading text-center">
                 <h1 class="text-4xl font-bold font-playfairFont">Top 100</h1>
@@ -483,6 +506,9 @@
             </div> 
         </div> 
    </section>
+   <!-- End Top Product Section -->
+
+   <!-- Start Magsafe Section -->
    <section class="magsafe">
     <div class="container ">
         <div class="magsafe-wraper bg-rose-100 flex items-center justify-center gap-[20px] h-[220px] px-[20px] lg:px-[100px]">
@@ -496,6 +522,9 @@
         </div>
     </div>
    </section>
+   <!-- End Magsafe Section -->
+
+   <!-- Start Product Section -->
    <section class="products-section hidden md:block">
     <div class="container flex flex-col gap-[20px]">
         <div class="heading text-center">
@@ -523,6 +552,9 @@
         </div>
     </div>
    </section>
+   <!-- End Product Section -->
+
+   <!-- Start Luminae Store Section -->
    <section class="luminae-store">
     <div class="container md:flex flex-col items-center">
         <div class="box py-[50px] px-[20px] lg:px-[50px] gap-[10px] lg:gap-[20px] content-hover text-center flex flex-col justify-center rounded-md ">
@@ -535,7 +567,10 @@
         </div>
     </div>
    </section>
-   <section class="describe-section  bg-black">
+   <!-- End Luminae Store Section -->
+
+   <!-- Start Describe Section -->
+   <section class="describe-section  bg-black" id="helpSupport">
         <div class="container flex flex-wrap justify-between pb-[50px] gap-[20px] lg:px-[100px]">
             <div class="single-box flex flex-col gap-[20px] basis-[45%] lg:basis-[15%]">
                 <div class="heading">
@@ -580,6 +615,9 @@
             </div>
         </div>
    </section>
+   <!-- End Describe Section -->
+
+   <!-- Start Footer Section -->
    <section class="footer md:border-t-2 border-slate-500 pt-[10px]">
     <div class="container">
         <div class="footer-wrap  md:flex md:justify-between  md:items-center">
@@ -604,8 +642,19 @@
         </div>
     </div>
    </section>
+   <!-- End Footer Section -->
+
+
+    <!------------------ Scroll Up -------------->
+
+ <a href="" class="fixed right-4 bg-firstColor shadow-sm inline-block px-4 py-2 rounded-full text-lg text-black z-50 -bottom-1/2 hover:translate-y-1 ease-in duration-200" id="scroll-up">
+    <i class="fa-solid fa-arrow-up"></i>
+  </a>
 
 
     <script src="https://kit.fontawesome.com/862c32b35b.js" crossorigin="anonymous"></script>
+
+    <!-- Script Js Link -->
+     <script src="main.js"></script>
 </body>
 </html>
